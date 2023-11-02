@@ -13,166 +13,169 @@ input {
 	border: none;
 }
 body {
-  width: 123.6rem;
-}.frame-1-D4N {
+  width: 128rem;
+}.index-Hbp {
   box-sizing: border-box;
-  padding-bottom: 7.8rem;
+  padding: 2.5rem 3.1rem 78.5rem 3.2rem;
   width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #e8daa7;
+  background-color: #d7d3ad;
 }
-.frame-1-D4N .auto-group-dkwj-v7C {
-  margin-bottom: 7.1rem;
+.index-Hbp .auto-group-amiz-2hp {
+  margin-bottom: 77.7rem;
   width: 100%;
-  height: 105rem;
-  position: relative;
+  height: 15.8rem;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
-.frame-1-D4N .auto-group-dkwj-v7C .rectangle-5-eqp {
-  width: 123.6rem;
-  height: 99.8rem;
-  position: absolute;
-  left: 0;
-  top: 0;
+.index-Hbp .auto-group-amiz-2hp .auto-group-gbce-eci {
+  box-sizing: border-box;
+  padding: 7.9rem 9.6rem 5.4rem 0rem;
+  height: 100%;
+  display: flex;
+  column-gap: 6.6rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-amiz-2hp .auto-group-gbce-eci .search-homes-8nn {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-amiz-2hp .auto-group-gbce-eci .buying-QkJ {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-amiz-2hp .auto-group-gbce-eci .selling-KsG {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-amiz-2hp .logo-large-1-FW2 {
+  margin-right: 10.8757rem;
+  width: 12.1243rem;
+  height: 15.8rem;
   object-fit: cover;
   vertical-align: top;
+  flex-shrink: 0;
 }
-.frame-1-D4N .auto-group-dkwj-v7C .rectangle-1-hp6 {
-  width: 72.6rem;
-  height: 10.3rem;
-  position: absolute;
-  left: 25.5rem;
-  top: 94.7rem;
-  background-color: #dd8c41;
-}
-.frame-1-D4N .auto-group-dkwj-v7C .rectangle-2-Axa {
-  width: 10.9rem;
-  height: 7.5rem;
-  position: absolute;
-  left: 33.9rem;
-  top: 96.1rem;
-  background-color: #f3ddc8;
-}
-.frame-1-D4N .auto-group-dkwj-v7C .rectangle-3-4HG {
-  width: 10.9rem;
-  height: 7.5rem;
-  position: absolute;
-  left: 57.9rem;
-  top: 96.1rem;
-  background-color: #f3ddc8;
-}
-.frame-1-D4N .auto-group-dkwj-v7C .rectangle-4-kQz {
-  width: 10.9rem;
-  height: 7.5rem;
-  position: absolute;
-  left: 79.4rem;
-  top: 96.1rem;
-  background-color: #f3ddc8;
-}
-.frame-1-D4N .auto-group-dkwj-v7C .client-testimonies-dza {
-  width: 8.1rem;
-  height: 3.4rem;
-  position: absolute;
-  left: 35.25rem;
-  top: 97.8rem;
+.index-Hbp .auto-group-amiz-2hp .about-vcA {
+  margin: 2.5rem 4rem 0rem 0rem;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.2125;
-  color: #643d0e;
-  font-family: Inter, 'Source Sans Pro';
-}
-.frame-1-D4N .auto-group-dkwj-v7C .great-homes-available-Bei {
-  width: 9.2rem;
-  height: 3.4rem;
-  position: absolute;
-  left: 58.7rem;
-  top: 98.4rem;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.2125;
-  color: #643d0e;
-  font-family: Inter, 'Source Sans Pro';
-}
-.frame-1-D4N .auto-group-dkwj-v7C .about-me-yaa {
-  width: 6.6rem;
-  height: 1.7rem;
-  position: absolute;
-  left: 81.5rem;
-  top: 99rem;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.2125;
-  color: #643d0e;
+  color: #1e1e1e;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
+  flex-shrink: 0;
 }
-.frame-1-D4N .auto-group-dkwj-v7C .betsy-bissonette-realty-234 {
-  width: 54.3rem;
-  height: 5.9rem;
-  position: absolute;
-  left: 56.1rem;
-  top: 4.2rem;
+.index-Hbp .auto-group-amiz-2hp .contact-bCW {
+  margin: 2.5rem 3.9rem 0rem 0rem;
   text-align: center;
-  font-size: 4.8rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.2125;
-  color: #dd8c41;
+  color: #1e1e1e;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
+  flex-shrink: 0;
 }
-.frame-1-D4N .auto-group-hqd4-SsU {
-  margin: 0rem 7.75rem 0rem 13.35rem;
-  width: calc(100% - 21.1rem);
+.index-Hbp .auto-group-amiz-2hp .client-testimony-Vog {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-Hbp .transformative-service-care-1n2 {
+  margin: 0rem 0.1rem 3.7rem 0rem;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-7x9c-hPx {
+  margin: 0rem 9.2rem 0rem 10rem;
+  width: calc(100% - 19.2rem);
   display: flex;
-  align-items: flex-start;
+  column-gap: 12.6rem;
+  align-items: flex-end;
   flex-shrink: 0;
 }
-.frame-1-D4N .auto-group-hqd4-SsU .homes-available-Vqk {
-  margin: 0.6rem 13.4rem 0rem 0rem;
-  max-width: 11.5rem;
+.index-Hbp .auto-group-7x9c-hPx .auto-group-hp8i-CrW {
+  width: 23.2rem;
+  height: 9.4rem;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.2125;
-  color: #643d0e;
-  font-family: Inter, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.frame-1-D4N .auto-group-hqd4-SsU .all-client-homes-have-appraised-for-over-sale-price-7ML {
-  margin-right: 11.35rem;
-  max-width: 18.1rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 800;
-  line-height: 1.2125;
-  color: #643d0e;
-  font-family: Inter, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.frame-1-D4N .auto-group-hqd4-SsU .work-only-with-the-most-trusted-lenders-KTQ {
-  margin: 0.3rem 10.05rem 0rem 0rem;
-  max-width: 19.2rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 800;
-  line-height: 1.2125;
-  color: #643d0e;
-  font-family: Inter, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.frame-1-D4N .auto-group-hqd4-SsU .sign-up-for-home-alerts-Kri {
-  margin-top: 0.3rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 800;
-  line-height: 1.2125;
-  color: #643d0e;
+  color: #1e1e1e;
   font-family: Inter, 'Source Sans Pro';
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-7x9c-hPx .auto-group-naca-Qxa {
+  width: 30rem;
+  height: 9.4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.index-Hbp .auto-group-7x9c-hPx .auto-group-2vbk-gv6 {
+  margin-bottom: 0.5rem;
+  width: 24.1rem;
+  height: 9.4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1e1e1e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
   flex-shrink: 0;
 }
