@@ -1,0 +1,70 @@
+import React from 'react'
+
+import styles from './index.module.css'
+
+const Frame1 = (props) => {
+  return (
+    <div className={styles['container']}>
+      <div className={styles['frame1']}>
+        <img
+          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          alt="Rectangle5115"
+          className={styles['rectangle5']}
+        />
+        <img
+          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          alt="Rectangle112"
+          className={styles['rectangle1']}
+        />
+        <img
+          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          alt="Rectangle214"
+          className={styles['rectangle2']}
+        />
+        <img
+          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          alt="Rectangle3110"
+          className={styles['rectangle3']}
+        />
+        <img
+          src="https://play.teleporthq.io/static/svg/default-img.svg"
+          alt="Rectangle4113"
+          className={styles['rectangle4']}
+        />
+        <span className={styles['text']}>
+          <span>Client Testimonies</span>
+        </span>
+        <span className={styles['text02']}>
+          <span>Great Homes available</span>
+        </span>
+        <span className={styles['text04']}>
+          <span>About Me</span>
+        </span>
+        <span className={styles['text06']}>
+          <span>10,000 homes available</span>
+        </span>
+        <span className={styles['text08']}>
+          <span>All client homes have appraised for over sale price</span>
+        </span>
+        <span className={styles['text10']}>
+          <span>
+            Work only with the most trusted lenders
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+        </span>
+        <span className={styles['text12']}>
+          <span>Sign up for home alerts!</span>
+        </span>
+        <span className={styles['text14']}>
+          <span>Betsy Bissonette Realty</span>
+        </span>
+      </div>
+    </div>
+  )
+}
+
+export default Frame1
