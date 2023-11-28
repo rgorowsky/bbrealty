@@ -1,0 +1,341 @@
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.desktopwepagebackground {
+  width: 100%;
+  height: 1451px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(215, 211, 173, 1);
+}
+.bottomlinks {
+  gap: 40px;
+  top: 912px;
+  left: 0px;
+  width: 1785px;
+  display: flex;
+  padding: 5px 0;
+  overflow: hidden;
+  position: absolute;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.lookingtobuy {
+  gap: 10px;
+  width: 627.407470703125px;
+  height: 56.82353210449219px;
+  display: flex;
+  padding: 11px 69px;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: rgba(234, 232, 221, 1);
+}
+.text {
+  top: 21.823532104492188px;
+  left: 69px;
+  color: rgba(30, 30, 30, 1);
+  width: 489px;
+  height: auto;
+  position: absolute;
+  flex-grow: 1;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.scheduleconsultation {
+  gap: 10px;
+  width: 479.9706726074219px;
+  height: 56.82353210449219px;
+  display: flex;
+  padding: 11px 69px;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: rgba(234, 232, 221, 1);
+}
+.text02 {
+  top: 21.823532104492188px;
+  left: 69px;
+  color: rgba(30, 30, 30, 1);
+  width: 342px;
+  height: auto;
+  position: absolute;
+  flex-grow: 1;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.lookingtosell {
+  gap: 10px;
+  width: 539.967041015625px;
+  height: 56.82353210449219px;
+  display: flex;
+  padding: 11px 69px;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: rgba(234, 232, 221, 1);
+}
+.text04 {
+  top: 21.823532104492188px;
+  left: 69px;
+  color: rgba(30, 30, 30, 1);
+  width: 402px;
+  height: auto;
+  position: absolute;
+  flex-grow: 1;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.text06 {
+  top: 874px;
+  left: 616px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bannerphoto {
+  gap: 10px;
+  top: 251px;
+  left: 0px;
+  width: 1785px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.bannerphoto1 {
+  width: auto;
+  height: 597px;
+  align-self: stretch;
+}
+.nav {
+  top: 25px;
+  left: 0px;
+  width: 1785px;
+  display: flex;
+  position: absolute;
+  flex-grow: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.topleftmenuoptions {
+  width: 543px;
+  height: 54px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.searchhomes {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  width: 181px;
+  height: 54px;
+  display: flex;
+  padding: 15px 11px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+}
+.text08 {
+  top: 15px;
+  left: 11px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.buying {
+  top: 0px;
+  left: 181px;
+  width: 181px;
+  height: 54px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.text10 {
+  top: 15px;
+  left: 55px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.selling {
+  top: 0px;
+  left: 362px;
+  width: 181px;
+  height: 54px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.text12 {
+  top: 15px;
+  left: 17px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.logo {
+  gap: 10px;
+  display: flex;
+  padding: 34px 25px;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+}
+.logolarge1 {
+  width: 121px;
+  height: 158px;
+}
+.toprightmenuoptions {
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.about {
+  width: 181px;
+  height: 54px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.text14 {
+  top: 15px;
+  left: 55.7567138671875px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.contact {
+  width: 181px;
+  height: 54px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.text16 {
+  top: 15px;
+  left: 42.7567138671875px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.clienttestimony {
+  width: 213px;
+  height: 54px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.text18 {
+  top: 15px;
+  left: 9.7567138671875px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

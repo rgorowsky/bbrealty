@@ -1,0 +1,214 @@
+.desktop-wepage {
+  background-color: #d7d3ad;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop-wepage .div {
+  background-color: #d7d3ad;
+  height: 1451px;
+  position: relative;
+  width: 1873px;
+}
+
+.desktop-wepage .bottom-links-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 912px !important;
+  width: 1873px !important;
+}
+
+.desktop-wepage .TRANSFORMATIVE {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 660px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 873px;
+}
+
+.desktop-wepage .banner-photo {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 251px;
+  width: 1873px;
+}
+
+.desktop-wepage .img {
+  align-self: stretch;
+  height: 597px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.desktop-wepage .nav {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 1873px;
+}
+
+.desktop-wepage .top-left-menu {
+  height: 54px;
+  position: relative;
+  width: 543px;
+}
+
+.desktop-wepage .search-homes {
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 181px;
+}
+
+.desktop-wepage .text-wrapper {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.desktop-wepage .buying {
+  height: 54px;
+  left: 181px;
+  position: absolute;
+  top: 0;
+  width: 181px;
+}
+
+.desktop-wepage .text-wrapper-2 {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.desktop-wepage .selling {
+  height: 54px;
+  left: 362px;
+  position: absolute;
+  top: 0;
+  width: 181px;
+}
+
+.desktop-wepage .text-wrapper-3 {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.desktop-wepage .logo {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 34px 25px;
+  position: relative;
+}
+
+.desktop-wepage .logo-large {
+  height: 158px;
+  object-fit: cover;
+  position: relative;
+  width: 121.24px;
+}
+
+.desktop-wepage .top-right-menu {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.desktop-wepage .div-wrapper {
+  height: 54px;
+  position: relative;
+  width: 181px;
+}
+
+.desktop-wepage .text-wrapper-4 {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.desktop-wepage .text-wrapper-5 {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.desktop-wepage .client-testimony {
+  height: 54px;
+  position: relative;
+  width: 213px;
+}
+
+.desktop-wepage .text-wrapper-6 {
+  color: #1e1e1e;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  white-space: nowrap;
+}

@@ -1,34 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>BB Realty</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"/>
-  <link rel="stylesheet" href="./styles/index.css"/>
-</head>
-<body>
-<div class="index-Hbp">
-  <div class="auto-group-amiz-2hp">
-    <div class="auto-group-gbce-eci">
-      <p class="search-homes-8nn">SEARCH HOMES</p>
-      <p class="buying-QkJ">BUYING</p>
-      <p class="selling-KsG">SELLING</p>
+import React from "react";
+import { BottomLinks } from "./BottomLinks";
+import "./style.css";
+
+export const DesktopWepage = () => {
+  return (
+    <div className="desktop-wepage">
+      <div className="div">
+        <BottomLinks
+          className="bottom-links-instance"
+          lookingToBuy="looking-to-buy.svg"
+          lookingToSell="looking-to-sell.svg"
+          schedule="schedule-consultation.svg"
+        />
+        <div className="TRANSFORMATIVE">TRANSFORMATIVE SERVICE &amp; CARE</div>
+        <div className="banner-photo">
+          <img className="img" alt="Banner photo" src="banner-photo.png" />
+        </div>
+        <div className="nav">
+          <div className="top-left-menu">
+            <div className="search-homes">
+              <div className="text-wrapper">SEARCH HOMES</div>
+            </div>
+            <div className="buying">
+              <div className="text-wrapper-2">BUYING</div>
+            </div>
+            <div className="selling">
+              <div className="text-wrapper-3">SELLING</div>
+            </div>
+          </div>
+          <div className="logo">
+            <img className="logo-large" alt="Logo large" src="logo-large-1.png" />
+          </div>
+          <div className="top-right-menu">
+            <div className="div-wrapper">
+              <div className="text-wrapper-4">ABOUT</div>
+            </div>
+            <div className="div-wrapper">
+              <div className="text-wrapper-5">CONTACT</div>
+            </div>
+            <div className="client-testimony">
+              <div className="text-wrapper-6">CLIENT TESTIMONY</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <img class="logo-large-1-FW2" src="./assets/logo-large-1.png"/>
-    <p class="about-vcA">ABOUT</p>
-    <p class="contact-bCW">CONTACT</p>
-    <p class="client-testimony-Vog">CLIENT TESTIMONY</p>
-  </div>
-  <p class="transformative-service-care-1n2">TRANSFORMATIVE SERVICE &amp; CARE</p>
-  <div class="auto-group-7x9c-hPx">
-    <div class="auto-group-hp8i-CrW">I’M LOOKING TO BUY</div>
-    <div class="auto-group-naca-Qxa">SCHEDULE CONSULTATION</div>
-    <div class="auto-group-2vbk-gv6">I’M LOOKING TO SELL</div>
-  </div>
-</div>
-</body>
-<!-- silly comment -->
+  );
+};
