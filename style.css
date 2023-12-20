@@ -236,16 +236,3 @@
   line-height: normal;
   white-space: nowrap;
 }
-
-/* attempts to shrink the screen to mobile version when width below 414px */
-@media only screen and (max-width: 414px ){
-  .div {
-    visibility: collapse;
-  }
-
-  /* put mobile version .class here */
-  .v43_17 {
-    visibility: visible;
-  }
-
-}
