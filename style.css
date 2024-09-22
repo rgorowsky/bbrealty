@@ -1,10 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .desktop-wepage {
   background-color: #d7d3ad;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 100vw;  /* full viewport width */
+  min-height: 100vh;  /* full viewport height */
+  box-sizing: border-box;  /* prevent content overflow */
 }
+
 
 .desktop-wepage .div {
   background-color: #d7d3ad;
@@ -235,4 +244,31 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+}
+
+@media (max-width: 475px) {
+  .desktop-wepage .banner-photo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-right-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
 }
