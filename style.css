@@ -9,7 +9,7 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100vw;  /* full viewport width */
+  width: auto;  /* full viewport width */
   min-height: 100vh;  /* full viewport height */
   box-sizing: border-box;  /* prevent content overflow */
 }
