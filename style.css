@@ -5,21 +5,20 @@ html, body {
 }
 
 .desktop-wepage {
-  background-color: #d7d3ad;
+  background-color: #d7d3ad; /* Background color */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;  /* full viewport width */
-  min-height: 100%;  /* full viewport height */
-  box-sizing: border-box;  /* prevent content overflow */
+  flex-direction: column; /* Ensure children stack properly */
+  width: 100vw; /* Take full viewport width */
+  height: 100vh; /* Take full viewport height */
+  box-sizing: border-box; /* Include padding and border in dimensions */
+  overflow: hidden; /* Prevent scrollbars from showing */
 }
 
 
 .desktop-wepage .div {
-  background-color: #d7d3ad;
-  width: 1873px; /* changing from 1873 to 100vw */
-  height: 1451px;
-  position: relative;
+  flex: 1; /* Ensure this child takes the remaining space */
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height dynamically */
 }
 
 .desktop-wepage .bottom-links {
