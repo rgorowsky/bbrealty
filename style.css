@@ -17,7 +17,7 @@ html, body {
 
 .desktop-wepage .div {
   background-color: #d7d3ad;
-  width: 100vw; /* changing from 1873 to 100vw */
+  width: auto; /* changing from 1873 to 100vw */
   height: 1451px;
   position: relative;
 }
