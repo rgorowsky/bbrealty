@@ -9,7 +9,7 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: auto;  /* full viewport width */
+  width: 100vw;  /* full viewport width */
   min-height: 100vh;  /* full viewport height */
   box-sizing: border-box;  /* prevent content overflow */
 }
@@ -17,7 +17,7 @@ html, body {
 
 .desktop-wepage .div {
   background-color: #d7d3ad;
-  width: auto; /* changing from 1873 to 100vw */
+  width: 1873px; /* changing from 1873 to 100vw */
   height: 1451px;
   position: relative;
 }
