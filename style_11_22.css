@@ -9,8 +9,8 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;  /* full viewport width */
-  min-height: 100%;  /* full viewport height */
+  width: 100vw;  /* full viewport width */
+  min-height: 100vh;  /* full viewport height */
   box-sizing: border-box;  /* prevent content overflow */
 }
 
