@@ -24,7 +24,7 @@ html, body {
 .desktop-wepage .bottom-links {
   display: flex;
   flex-wrap: wrap;
-  width: 1873px;
+  /* width: 1873px; */
   align-items: flex-end;
   justify-content: center;
   gap: 40px 40px;
@@ -79,19 +79,17 @@ html, body {
 .desktop-wepage .img {
   position: relative;
   align-self: stretch;
-  width: 100%;
-  height: 597px;
+  width: 100dvw;
+  height: 100dvh;
   object-fit: cover;
 }
 
 .desktop-wepage .nav {
   display: flex;
-  width: 1873px;
-  align-items: flex-start;
   justify-content: space-between;
-  position: absolute;
-  top: 25px;
-  left: 0;
+  width: 100%; /* Use full viewport width */
+  padding: 0 10px; /* Add some horizontal padding */
+  box-sizing: border-box; /* Account for padding */
 }
 
 .desktop-wepage .top-left-menu {
@@ -184,17 +182,21 @@ html, body {
 }
 
 .desktop-wepage .top-right-menu {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
-  position: relative;
-  flex: 0 0 auto;
+  flex-wrap: wrap; /* Prevent items from extending */
+  gap: 20px; /* Adjust spacing between menu items */
+  max-width: 100%; /* Prevent overflow */
+  overflow: hidden; /* Hide any overflow */
+  padding: 0 20px; /* Optional padding for alignment */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .desktop-wepage .div-wrapper {
-  position: relative;
-  width: 181px;
-  height: 54px;
+  flex: 1 1 auto; /* Let the items shrink or grow based on space */
+  max-width: 200px; /* Optional: Set a maximum width */
+  text-align: center; /* Center text */
 }
 
 .desktop-wepage .text-wrapper-4 {

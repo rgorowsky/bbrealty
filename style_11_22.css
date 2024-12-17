@@ -6,19 +6,21 @@ html, body {
 
 .desktop-wepage {
   background-color: #d7d3ad;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;  /* full viewport width */
-  min-height: 100vh;  /* full viewport height */
-  box-sizing: border-box;  /* prevent content overflow */
+  width: 100%;
+  height: 100vh; /* Force it to fill the viewport height */
+  min-height: 100%; /* Prevent it from collapsing */
+  display: flex; /* Ensures child elements align well */
+  flex-direction: column;
+  position: relative;
 }
 
 
 .desktop-wepage .div {
-  background-color: #d7d3ad;
-  width: 1873px; /* changing from 1873 to 100vw */
-  height: 1451px;
+  /* background-color: #d7d3ad; */
+  flex: 1;
+  background-color: inherit;
+  width: 100%; /* changing from 1873 to 100vw */
+  height: 100%;
   position: relative;
 }
 
@@ -69,7 +71,7 @@ html, body {
 .desktop-wepage .banner-photo {
   display: flex;
   flex-direction: column;
-  width: 1873px;
+  width: 100%;
   align-items: flex-start;
   gap: 10px;
   position: absolute;
@@ -271,4 +273,8 @@ html, body {
     justify-content: center;
     margin: 10px 0;
   }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
