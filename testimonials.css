@@ -1,0 +1,27 @@
+/* Styling for the horizontal gallery */
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    background-color: #f1f1f1;
+  }
+  
+  .gallery-container img {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .gallery-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .gallery-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
