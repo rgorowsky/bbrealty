@@ -2,3 +2,10 @@
 server.ts
 server.js
 
+# ignore all node_modules
+node_modules/
+*node_modules
+
+# ignore backend and lambda details
+lambda-deploy/
+contact-backend/
