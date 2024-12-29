@@ -1,0 +1,4 @@
+# ignore backend details files
+server.ts
+server.js
+
