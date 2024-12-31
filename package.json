@@ -1,0 +1,12 @@
+{
+  "name": "bbrealty",
+  "version": "1.0.0",
+  "description": "Betsy Bissonette Realty Web Site",
+  "main": "desktopwebpagebackground.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
