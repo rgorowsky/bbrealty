@@ -25,11 +25,16 @@ export const handler = async (
       },
     };
 
-    await ses.sendEmail(params).promise();
-
+    await ses.sendEmail(params).promise()
+      .then((data) => {
+        console.log("Email sent! Message ID:", data.MessageId);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Email sent successfully!" }),
+      body: JSON.stringify({ message: "Checking for you Robby" }),
     };
   } catch (error) {
     console.error("Error sending email:", error);
