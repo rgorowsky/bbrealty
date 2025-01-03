@@ -10,7 +10,7 @@ export const handler = async (
     const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
 
     const params = {
-      Source: "contact@betsybissonetterealty.com",
+      Source: "betsybissonetterealty.com",
       Destination: {
         ToAddresses: ["rgorowsky@gmail.com"],
       },
