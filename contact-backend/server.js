@@ -23,7 +23,7 @@ const handler = (event) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
         const params = {
-            Source: "contact@betsybissonetterealty.com",
+            Source: "betsybissonetterealty.com",
             Destination: {
                 ToAddresses: ["rgorowsky@gmail.com"],
             },
