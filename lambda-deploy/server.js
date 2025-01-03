@@ -55,8 +55,15 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                         Subject: { Data: Subject },
                         Body: { Text: { Data: Comment_1 } },
                     },
+                    ConfigurationSetName: "my-first-configuration-set",
                 };
-                return [4 /*yield*/, ses.sendEmail(params).promise()];
+                return [4 /*yield*/, ses.sendEmail(params).promise()
+                        .then(function (data) {
+                        console.log("Email sent! Message ID:", data.MessageId);
+                    })
+                        .catch(function (error) {
+                        console.error("Error sending email:", error);
+                    })];
             case 1:
                 _b.sent();
                 return [2 /*return*/, {

@@ -23,6 +23,7 @@ export const handler = async (
         Subject: { Data: Subject },
         Body: { Text: { Data: Comment } },
       },
+      ConfigurationSetName: "my-first-configuration-set", // this was added cuz i cant get an email through, perhpas configuration set is applied to my email
     };
 
     await ses.sendEmail(params).promise()
@@ -32,6 +33,7 @@ export const handler = async (
       .catch((error) => {
         console.error("Error sending email:", error);
       });
+
     return {
       statusCode: 200,
       body: JSON.stringify({ message: "Checking for you Robby" }),
