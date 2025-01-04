@@ -10,7 +10,7 @@ export const handler = async (
     const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
 
     const params = {
-      Source: "rgorowsky@gmail.com",
+      Source: "betsybissonetterealty.com",
       Destination: {
         ToAddresses: ["rgorowsky@gmail.com"],
       },
@@ -18,7 +18,7 @@ export const handler = async (
         Subject: { Data: Subject },
         Body: { Text: { Data: Comment } },
       },
-      ConfigurationSetName: "my-first-configuration-set",
+      ConfigurationSetName: "contact-form-config-set",
     };
 
     await ses.sendEmail(params).promise()

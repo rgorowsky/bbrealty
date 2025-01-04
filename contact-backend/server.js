@@ -51,7 +51,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                 _b.trys.push([0, 2, , 3]);
                 _a = JSON.parse(event.body || "{}"), Name = _a.Name, Email = _a.Email, Subject = _a.Subject, Comment_1 = _a.Comment;
                 params = {
-                    Source: "rgorowsky@gmail.com",
+                    Source: "betsybissonetterealty.com",
                     Destination: {
                         ToAddresses: ["rgorowsky@gmail.com"],
                     },
@@ -59,7 +59,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                         Subject: { Data: Subject },
                         Body: { Text: { Data: Comment_1 } },
                     },
-                    ConfigurationSetName: "my-first-configuration-set", // this was added cuz i cant get an email through, perhpas configuration set is applied to my email
+                    ConfigurationSetName: "contact-form-config-set", // this was added cuz i cant get an email through, perhpas configuration set is applied to my email
                 };
                 return [4 /*yield*/, ses.sendEmail(params).promise()
                         .then(function (data) {
