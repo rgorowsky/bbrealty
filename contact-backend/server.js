@@ -59,7 +59,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                         Subject: { Data: Subject },
                         Body: { Text: { Data: Comment_1 } },
                     },
-                    ConfigurationSetName: "contact-form-config-set", // this was added cuz i cant get an email through, perhpas configuration set is applied to my email
+                    ConfigurationSetName: "contact-form-config-set",
                 };
                 return [4 /*yield*/, ses.sendEmail(params).promise()
                         .then(function (data) {

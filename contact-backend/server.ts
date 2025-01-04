@@ -23,7 +23,7 @@ export const handler = async (
         Subject: { Data: Subject },
         Body: { Text: { Data: Comment } },
       },
-      ConfigurationSetName: "contact-form-config-set", // this was added cuz i cant get an email through, perhpas configuration set is applied to my email
+      ConfigurationSetName: "contact-form-config-set",
     };
 
     await ses.sendEmail(params).promise()
