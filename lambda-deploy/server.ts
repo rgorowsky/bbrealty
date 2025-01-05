@@ -2,10 +2,12 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 import AWS from "aws-sdk";
 
 const ses = new AWS.SES({ region: "us-east-2" });
+console.log("before handler"); // extra error handling - can remove later
 
 export const handler = async (
   event: APIGatewayProxyEvent
 ): Promise<APIGatewayProxyResult> => {
+    console.log("beginning of handler"); // extra error handling - can remove later
   try {
     console.log(event); // extra error handling - can remove later
     const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
