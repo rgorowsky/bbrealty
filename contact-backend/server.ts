@@ -7,10 +7,12 @@ const app = express();
 app.use(bodyParser.json());
 
 const ses = new AWS.SES({ region: "us-east-2" });
+console.log("before handler"); // extra error handling - can remove later
 
 export const handler = async (
   event: APIGatewayProxyEvent
 ): Promise<APIGatewayProxyResult> => {
+  console.log("before handler"); // extra error handling - can remove later
   try {
     const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
 

@@ -43,12 +43,16 @@ var aws_sdk_1 = require("aws-sdk");
 var app = (0, express_1.default)();
 app.use(body_parser_1.default.json());
 var ses = new aws_sdk_1.default.SES({ region: "us-east-2" });
+console.log("before handler"); // extra error handling - can remove later
 var handler = function (event) { return __awaiter(void 0, void 0, void 0, function () {
     var _a, Name, Email, Subject, Comment_1, params, error_1;
     return __generator(this, function (_b) {
         switch (_b.label) {
             case 0:
-                _b.trys.push([0, 2, , 3]);
+                console.log("before handler"); // extra error handling - can remove later
+                _b.label = 1;
+            case 1:
+                _b.trys.push([1, 3, , 4]);
                 _a = JSON.parse(event.body || "{}"), Name = _a.Name, Email = _a.Email, Subject = _a.Subject, Comment_1 = _a.Comment;
                 params = {
                     Source: "rgorowsky@gmail.com",
@@ -68,13 +72,13 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                         .catch(function (error) {
                         console.error("Error sending email:", error);
                     })];
-            case 1:
+            case 2:
                 _b.sent();
                 return [2 /*return*/, {
                         statusCode: 200,
                         body: JSON.stringify({ message: "Checking for you Robby" }),
                     }];
-            case 2:
+            case 3:
                 error_1 = _b.sent();
                 console.error("Error sending email:", error_1);
                 return [2 /*return*/, {
@@ -84,7 +88,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                             error: error_1,
                         }),
                     }];
-            case 3: return [2 /*return*/];
+            case 4: return [2 /*return*/];
         }
     });
 }); };
