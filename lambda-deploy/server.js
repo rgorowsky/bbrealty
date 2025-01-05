@@ -45,6 +45,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
         switch (_b.label) {
             case 0:
                 _b.trys.push([0, 2, , 3]);
+                console.log(event); // extra error handling - can remove later
                 _a = JSON.parse(event.body || "{}"), Name = _a.Name, Email = _a.Email, Subject = _a.Subject, Comment_1 = _a.Comment;
                 params = {
                     Source: "rgorowsky@gmail.com",
@@ -57,6 +58,8 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                     },
                     ConfigurationSetName: "contact-form-config-set",
                 };
+                console.log(params); // extra error handling - can remove later
+                console.log("About to send an email with SES");
                 return [4 /*yield*/, ses.sendEmail(params).promise()
                         .then(function (data) {
                         console.log("Email sent! Message ID:", data.MessageId);
@@ -66,6 +69,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                     })];
             case 1:
                 _b.sent();
+                console.log("Completed SES email send function");
                 return [2 /*return*/, {
                         statusCode: 200,
                         body: JSON.stringify({ message: "Email sent successfully!" }),

@@ -119,34 +119,7 @@
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
-    <form id="contact-form"> <!-- changing this line to remove action-->
-     <!-- Beginning of Section sending form data to back end - will eventually be migrated to a back end methods section -->  
-      <!-- <script>
-        document.getElementById("contact-form").addEventListener("submit", async (event) => {
-          event.preventDefault(); // Prevent form's default submit action
-      
-          const formData = {
-            Name: event.target.Name.value,
-            Email: event.target.Email.value,
-            Subject: event.target.Subject.value,
-            Comment: event.target.Comment.value,
-          };
-      
-          try {
-            const response = await fetch("https://w69geyhoif.execute-api.us-east-2.amazonaws.com/contact", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(formData),
-            });
-      
-            const result = await response.json();
-            alert(result.message);
-          } catch (error) {
-            alert("Failed to send message. Please try again.");
-          }
-        });
-      </script> -->
-      <!-- End of Section sending form data to back end - will eventually be migrated to a back end methods section -- something is off here i think -->  
+    <form id="contact-form"> <!-- changing this line to remove action--> 
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
@@ -182,7 +155,7 @@
         });
       </script>
 
-      
+
   </div>
   
 <!-- Image of location/map -->

@@ -7,6 +7,7 @@ export const handler = async (
   event: APIGatewayProxyEvent
 ): Promise<APIGatewayProxyResult> => {
   try {
+    console.log(event); // extra error handling - can remove later
     const { Name, Email, Subject, Comment } = JSON.parse(event.body || "{}");
 
     const params = {
@@ -20,7 +21,9 @@ export const handler = async (
       },
       ConfigurationSetName: "contact-form-config-set",
     };
+    console.log(params); // extra error handling - can remove later
 
+    console.log("About to send an email with SES");
     await ses.sendEmail(params).promise()
       .then((data) => {
         console.log("Email sent! Message ID:", data.MessageId);
@@ -28,6 +31,7 @@ export const handler = async (
       .catch((error) => {
         console.error("Error sending email:", error);
       });
+    console.log("Completed SES email send function");
 
     return {
       statusCode: 200,
