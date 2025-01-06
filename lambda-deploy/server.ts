@@ -27,13 +27,13 @@ export const handler = async (
 
     console.log("About to send an email with SES");
     await ses.sendEmail(params).promise()
-    //   .then((data) => {
-    //     console.log("Email sent! Message ID:", data.MessageId);
-    //   })
-    //   .catch((error) => {
-    //     console.error("Error sending email:", error);
-    //   });
-    // console.log("Completed SES email send function");
+      .then((data) => {
+        console.log("Email sent! Message ID:", data.MessageId);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+    console.log("Completed SES email send function");
 
     return {
       statusCode: 200,

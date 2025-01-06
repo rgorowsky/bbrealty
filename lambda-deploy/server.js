@@ -66,23 +66,15 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                 console.log(params); // extra error handling - can remove later
                 console.log("About to send an email with SES");
                 return [4 /*yield*/, ses.sendEmail(params).promise()
-                    //   .then((data) => {
-                    //     console.log("Email sent! Message ID:", data.MessageId);
-                    //   })
-                    //   .catch((error) => {
-                    //     console.error("Error sending email:", error);
-                    //   });
-                    // console.log("Completed SES email send function");
-                ];
+                        .then(function (data) {
+                        console.log("Email sent! Message ID:", data.MessageId);
+                    })
+                        .catch(function (error) {
+                        console.error("Error sending email:", error);
+                    })];
             case 2:
                 _b.sent();
-                //   .then((data) => {
-                //     console.log("Email sent! Message ID:", data.MessageId);
-                //   })
-                //   .catch((error) => {
-                //     console.error("Error sending email:", error);
-                //   });
-                // console.log("Completed SES email send function");
+                console.log("Completed SES email send function");
                 return [2 /*return*/, {
                         statusCode: 200,
                         body: JSON.stringify({ message: "Email sent successfully!" }),
