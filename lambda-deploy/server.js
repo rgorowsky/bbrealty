@@ -51,6 +51,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                 _b.trys.push([1, 3, , 4]);
                 console.log(event); // extra error handling - can remove later
                 _a = JSON.parse(event.body || "{}"), Name = _a.Name, Email = _a.Email, Subject = _a.Subject, Comment_1 = _a.Comment;
+                console.log(event.body); // extra error handling - can remove later
                 params = {
                     Source: "rgorowsky@gmail.com",
                     Destination: {
@@ -65,15 +66,23 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                 console.log(params); // extra error handling - can remove later
                 console.log("About to send an email with SES");
                 return [4 /*yield*/, ses.sendEmail(params).promise()
-                        .then(function (data) {
-                        console.log("Email sent! Message ID:", data.MessageId);
-                    })
-                        .catch(function (error) {
-                        console.error("Error sending email:", error);
-                    })];
+                    //   .then((data) => {
+                    //     console.log("Email sent! Message ID:", data.MessageId);
+                    //   })
+                    //   .catch((error) => {
+                    //     console.error("Error sending email:", error);
+                    //   });
+                    // console.log("Completed SES email send function");
+                ];
             case 2:
                 _b.sent();
-                console.log("Completed SES email send function");
+                //   .then((data) => {
+                //     console.log("Email sent! Message ID:", data.MessageId);
+                //   })
+                //   .catch((error) => {
+                //     console.error("Error sending email:", error);
+                //   });
+                // console.log("Completed SES email send function");
                 return [2 /*return*/, {
                         statusCode: 200,
                         body: JSON.stringify({ message: "Email sent successfully!" }),
