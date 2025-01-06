@@ -45,8 +45,10 @@ export const handler = async (
       statusCode: 500,
       body: JSON.stringify({
         message: "Failed to send email.",
-        error,
+        error
       }),
     };
+  } finally {
+    console.log("Handler finished lambda deploy");
   }
 };

@@ -49,5 +49,7 @@ export const handler = async (
         error,
       }),
     };
+  } finally {
+    console.log("handler finished contact backend")
   }
 };

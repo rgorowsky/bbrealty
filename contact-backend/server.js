@@ -52,7 +52,7 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                 console.log("before handler"); // extra error handling - can remove later
                 _b.label = 1;
             case 1:
-                _b.trys.push([1, 3, , 4]);
+                _b.trys.push([1, 3, 4, 5]);
                 _a = JSON.parse(event.body || "{}"), Name = _a.Name, Email = _a.Email, Subject = _a.Subject, Comment_1 = _a.Comment;
                 params = {
                     Source: "rgorowsky@gmail.com",
@@ -88,7 +88,10 @@ var handler = function (event) { return __awaiter(void 0, void 0, void 0, functi
                             error: error_1,
                         }),
                     }];
-            case 4: return [2 /*return*/];
+            case 4:
+                console.log("handler finished contact backend");
+                return [7 /*endfinally*/];
+            case 5: return [2 /*return*/];
         }
     });
 }); };
