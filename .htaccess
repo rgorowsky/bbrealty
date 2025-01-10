@@ -1,5 +1,6 @@
 RewriteEngine On
-# Remove .html extension
+
+# Remove .html extension for all pages
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)$ $1.html [L]
@@ -8,10 +9,10 @@ RewriteRule ^([^/]+)$ $1.html [L]
 RewriteCond %{THE_REQUEST} /index\.html
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Redirect testimonials.html to /
+# Redirect testimonials.html to /testimonials
 RewriteCond %{THE_REQUEST} /testimonials\.html
-RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^testimonials\.html$ /testimonials [R=301,L]
 
-# Redirect about.html to /
+# Redirect about.html to /about
 RewriteCond %{THE_REQUEST} /about\.html
-RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^about\.html$ /about [R=301,L]
