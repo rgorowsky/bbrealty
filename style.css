@@ -1368,6 +1368,10 @@ a {
 .w3-right-align {
 	text-align: right !important
 }
+/* attempt for hamburger menu in mobile */
+.w3-right.w3-hide-small {
+    display: none !important;
+}
 
 .w3-justify {
 	text-align: justify !important
