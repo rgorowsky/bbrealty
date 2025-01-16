@@ -16,3 +16,7 @@ RewriteRule ^testimonials\.html$ /testimonials [R=301,L]
 # Redirect about.html to /about
 RewriteCond %{THE_REQUEST} /about\.html
 RewriteRule ^about\.html$ /about [R=301,L]
+
+# Redirect PennAve.html to /PennAve
+RewriteCond %{THE_REQUEST} /about\.html
+RewriteRule ^PennAve\.html$ /PennAve [R=301,L]
