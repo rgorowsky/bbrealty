@@ -443,7 +443,9 @@ a {
 
 .w3-tooltip,
 .w3-display-container {
-	position: relative
+	position: relative;
+	min-height: 50px; /* Set a minimum height for the container */
+    overflow: hidden; /* Ensure content doesn't overflow the container */
 }
 
 .w3-tooltip .w3-text {
