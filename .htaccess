@@ -17,6 +17,18 @@ RewriteRule ^testimonials\.html$ /testimonials [R=301,L]
 RewriteCond %{THE_REQUEST} /about\.html
 RewriteRule ^about\.html$ /about [R=301,L]
 
+# Redirect coming_soon.html to /coming_soon
+RewriteCond %{THE_REQUEST} /coming_soon\.html
+RewriteRule ^coming_soon\.html$ /coming_soon [R=301,L]
+
 # Redirect PennAve.html to /PennAve
-RewriteCond %{THE_REQUEST} /about\.html
+RewriteCond %{THE_REQUEST} /PennAve\.html
 RewriteRule ^PennAve\.html$ /PennAve [R=301,L]
+
+# Redirect Craftsman.html to /Craftsman
+RewriteCond %{THE_REQUEST} /Craftsman\.html
+RewriteRule ^Craftsman\.html$ /Craftsman [R=301,L]
+
+# Redirect Mudroom.html to /Mudroom
+RewriteCond %{THE_REQUEST} /Mudroom\.html
+RewriteRule ^Mudroom\.html$ /Mudroom [R=301,L]
