@@ -27,8 +27,33 @@
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="assets/banner-photo.png" alt="Architecture" width="1500" height="800">
+<header class="w3-display-container w3-content w3-wide slideshow-container"
+        style="max-width:1500px;">
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot1.jpg" class="w3-image" alt="Banner 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot2.jpg" class="w3-image" alt="Banner 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot3.jpg" class="w3-image" alt="Banner 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot4.jpg" class="w3-image" alt="Banner 4">
+  </div>
+
+  <!-- DOTS -->
+  <div class="slideshow-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
 </header>
 
 <!-- Page content -->
@@ -134,3 +159,45 @@
 
 </body>
 </html>
+
+<script>
+  let slideIndex = 1;
+  let slideTimer;
+
+  showSlides(slideIndex);
+  autoSlides();
+
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+  }
+
+  function currentSlide(n) {
+    clearTimeout(slideTimer);
+    slideIndex = n;
+    showSlides(slideIndex);
+    autoSlides();
+  }
+
+  function autoSlides() {
+    slideTimer = setTimeout(() => {
+      slideIndex++;
+      showSlides(slideIndex);
+      autoSlides();
+    }, 5000); // 5 seconds per slide
+  }
+</script>

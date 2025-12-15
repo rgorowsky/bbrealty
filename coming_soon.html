@@ -18,8 +18,8 @@
     <!-- Float links to the right. Hide them on small screens -->
 
     <div class="w3-right w3-hide-small">
-      <a href="/coming_soon" class="w3-bar-item w3-button">Buying</a>
-      <a href="/coming_soon" class="w3-bar-item w3-button">Selling</a>
+      <a href="/remodeling" class="w3-bar-item w3-button">Remodeling</a>
+      <a href="/coming_soon" class="w3-bar-item w3-button">Lending</a>
       <a href="/testimonials" class="w3-bar-item w3-button">Testimonials</a>
       <a href="/about" class="w3-bar-item w3-button">About Me</a>
     </div>
@@ -27,92 +27,48 @@
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="assets/banner-photo.png" alt="Architecture" width="1500" height="800">
+<header class="w3-display-container w3-content w3-wide slideshow-container"
+        style="max-width:1500px;">
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot1.jpg" class="w3-image" alt="Banner 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot2.jpg" class="w3-image" alt="Banner 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot3.jpg" class="w3-image" alt="Banner 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot4.jpg" class="w3-image" alt="Banner 4">
+  </div>
+
+  <!-- DOTS -->
+  <div class="slideshow-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
 </header>
 
-<!-- Page content -->
-<!-- <div class="w3-content w3-padding" style="max-width:1564px">
 
-  Project Section
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Current Listings</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Search More Homes</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div> -->
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
         <a style="text-decoration: none; color: inherit; display: inline-block;">
-            Listings Page is in development and will be coming soon.  Please use the Contact form to inquire about your needs
+            Lending page is in development, License details en route.  Get in touch via the contact form and we'll get started on Your Project
         </a>
         <!-- <button onclick="location.href='testimonials.html';"
             style="position: absolute; width: 100%; height: 100%; opacity: 0; border: none; cursor: pointer;">
         </button> -->
     </h3>
   </div>
-
-  <!-- <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>Kelsey</h3>
-      <p>Betsy helped give me encouragement and support... Betsy was able to find a home I loved in my price range."</p>
-      <p><button onclick="location.href='testimonials.html';" class="w3-button w3-light-grey w3-block">Read More</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Aimee</h3>
-      <p>If you’re looking for an agent who truly listens to your concerns and... She actually helped make looking for a new house fun</p>
-      <p><button onclick="location.href='testimonials.html';" class="w3-button w3-light-grey w3-block">Read More</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Rob</h3>
-      <p>You found my fiancee and I a place that was setup for chickens... Now we're getting chickens... hooray?</p>
-      <p><button class="w3-button w3-light-grey w3-block">Read More</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Carolyn & Ross</h3>
-      <p>The perfect house to start my life with my husband.  And a view of the lake to boot!  It's home and we love it</p>
-      <p><button class="w3-button w3-light-grey w3-block">Read More</button></p>
-    </div>
-  </div> -->
 
 
   <!-- Contact Section -->
@@ -136,3 +92,45 @@
 
 </body>
 </html>
+
+<script>
+  let slideIndex = 1;
+  let slideTimer;
+
+  showSlides(slideIndex);
+  autoSlides();
+
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+  }
+
+  function currentSlide(n) {
+    clearTimeout(slideTimer);
+    slideIndex = n;
+    showSlides(slideIndex);
+    autoSlides();
+  }
+
+  function autoSlides() {
+    slideTimer = setTimeout(() => {
+      slideIndex++;
+      showSlides(slideIndex);
+      autoSlides();
+    }, 5000); // 5 seconds per slide
+  }
+</script>
