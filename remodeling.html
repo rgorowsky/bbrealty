@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BB Realty – Before & After Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- W3 CSS (already implied by your classes) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Your site CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific CSS -->
+  <style>
+    /* ===== PROJECT SECTION ===== */
+    .projects-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 16px;
+    }
+
+    .project {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+
+    .project-column {
+      flex: 1;
+    }
+
+    .project img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    .project img:hover {
+      transform: scale(1.75);
+    }
+
+    .project-description {
+      margin-top: 12px;
+    }
+
+    .project-button {
+      margin-top: 12px;
+    }
+
+    /* ===== MOBILE STACK ===== */
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+      }
+
+      .project-button {
+        text-align: center;
+        margin: 24px 0;
+      }
+    }
+
+    /* ===== MODAL OVERLAY ===== */
+    .image-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .image-modal img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/" class="w3-bar-item w3-button">
+      <img src="assets/logo-large.png" alt="BB Realty Logo" class="nav-logo">
+      <b>BB Realty</b>
+    </a>
+    <div class="w3-right">
+      <a href="/coming_soon" class="w3-bar-item w3-button">Buying</a>
+      <a href="/coming_soon" class="w3-bar-item w3-button">Selling</a>
+      <a href="/testimonials" class="w3-bar-item w3-button">Testimonials</a>
+      <a href="/about" class="w3-bar-item w3-button">About Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER IMAGE ===== -->
+<header class="w3-display-container w3-content w3-wide slideshow-container"
+        style="max-width:1500px;">
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot1.jpg" class="w3-image" alt="Banner 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot2.jpg" class="w3-image" alt="Banner 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot3.jpg" class="w3-image" alt="Banner 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="assets/ElliotAve/elliot4.jpg" class="w3-image" alt="Banner 4">
+  </div>
+
+  <!-- DOTS -->
+  <div class="slideshow-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+</header>
+
+<!-- ===================== -->
+<!-- ===== CONTENT ======= -->
+<!-- ===================== -->
+
+<section class="projects-section">
+    <div class="project-wrapper">
+    <h3 class="project-title w3-border-bottom w3-border-light-grey w3-padding-16">
+      THE 1926 CRAFTSMAN BATH
+    </h3>
+  <!-- ===== PROJECT 1 - 1926 Craftsman ===== -->
+        <div class="project">
+            <!-- BEFORE -->
+                <div class="project-column">
+                <img src="assets//GrandOldCraftsman/old.jpg"
+                    alt="Before renovation"
+                    onclick="openModal(this.src)">
+                <div class="project-description">
+                    <h4>Before</h4>
+                    <p>Residential | Concept, Rendering, Execution | Completed JUNE 2024</p>
+                </div>
+                <!-- <div class="project-button">
+                  <button class="w3-button w3-black"
+                          onclick="openGallery([
+                            'assets/GrandOldCraftsman/gallery/01.jpg',
+                            'assets/GrandOldCraftsman/gallery/02.jpg',
+                            'assets/GrandOldCraftsman/gallery/03.jpg',
+                            'assets/GrandOldCraftsman/gallery/04.jpg'
+                          ])">
+                    View Project Details
+                  </button>
+                </div>                   -->
+            </div>
+            <!-- AFTER -->
+            <div class="project-column">
+            <img src="assets//GrandOldCraftsman/new.jpg"
+                alt="After renovation"
+                onclick="openModal(this.src)">
+                <div class="project-description">
+                    <h4>After</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-wrapper">
+    <h3 class="project-title w3-border-bottom w3-border-light-grey w3-padding-16">
+      THE POWDERHORN HOUSE
+    </h3>
+    <!-- Early 1900s Powderhorn ===== -->
+        <div class="project">
+            <!-- BEFORE -->
+            <div class="project-column">
+            <img src="assets/Powderhorn/galleryImages/phbefore1.jpg"
+                alt="Before renovation"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>Before</h4>
+            </div>
+        
+            <div class="project-button">
+                <button class="w3-button w3-black"
+                        onclick="openGallery([
+                          'assets/Powderhorn/galleryImages/01-DSC09298.jpg',
+                          'assets/Powderhorn/galleryImages/02-DSC09301.jpg',
+                          'assets/Powderhorn/galleryImages/03-DSC09304.jpg',
+                          'assets/Powderhorn/galleryImages/04-DSC09310.jpg',
+                          'assets/Powderhorn/galleryImages/05-DSC09313.jpg',
+                          'assets/Powderhorn/galleryImages/06-DSC09316.jpg',
+                          'assets/Powderhorn/galleryImages/08-DSC09322.jpg',
+                          'assets/Powderhorn/galleryImages/09-DSC09325.jpg',
+                          'assets/Powderhorn/galleryImages/10-DSC09328.jpg',
+                          'assets/Powderhorn/galleryImages/11-DSC09331.jpg',
+                          'assets/Powderhorn/galleryImages/12-DSC09337.jpg',
+                          'assets/Powderhorn/galleryImages/13-DSC09340.jpg',
+                          'assets/Powderhorn/galleryImages/14-DSC09343.jpg',
+                          'assets/Powderhorn/galleryImages/15-DSC09346.jpg',
+                          'assets/Powderhorn/galleryImages/17-DSC09352.jpg',
+                          'assets/Powderhorn/galleryImages/18-DSC09355.jpg',
+                          'assets/Powderhorn/galleryImages/19-DSC09358.jpg',
+                          'assets/Powderhorn/galleryImages/20-DSC09361.jpg',
+                          'assets/Powderhorn/galleryImages/21-DSC09364.jpg',
+                          'assets/Powderhorn/galleryImages/22-DSC09367.jpg',
+                          'assets/Powderhorn/galleryImages/23-All floors.jpg',
+                          'assets/Powderhorn/galleryImages/26-basement.jpg',
+                          'assets/Powderhorn/galleryImages/phbefore1.jpg',
+                          'assets/Powderhorn/galleryImages/phbefore2.jpg',
+                          'assets/Powderhorn/galleryImages/phbefore3.jpg',
+                          'assets/Powderhorn/galleryImages/phbefore4.jpg',
+                          'assets/Powderhorn/galleryImages/phbefore5.jpg'
+                        ])">
+                  View Project Details
+                </button>
+              </div>   
+            </div>
+        
+            <!-- AFTER -->
+            <div class="project-column">
+            <img src="assets/ElliotAve/elliot_after.jpg"
+                alt="After renovation"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>After</h4>
+                <p>Nestled a block from Powderhorn Park, this 1906 home demanded a Craftsman's aesthetic that reflected its deep history and timeless charm!</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Penn Ave Basement -->
+    <div class="project-wrapper">
+    <h3 class="project-title w3-border-bottom w3-border-light-grey w3-padding-16">
+    FULL BASEMENT ADDITION
+    </h3>
+        <div class="project">
+            <div class="project-column">
+            <img src="assets/PennBasement/base_old.JPG"
+                alt="Before"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>Before</h4>
+                <p>Residential | Concept, Rendering, Execution | Completed JUNE 2024</p>
+            </div>
+                <div class="project-button">
+                    <button class="w3-button w3-black"
+                            onclick="openGallery([
+                            'assets/PennBasement/galleryImages/base_old.JPG',
+                            'assets/PennBasement/galleryImages/19-5921_Penn_Ave_S-19.jpg',
+                            'assets/PennBasement/galleryImages/20-5921_Penn_Ave_S-20.jpg',
+                            'assets/PennBasement/galleryImages/21-5921_Penn_Ave_S-21.jpg',
+                            'assets/PennBasement/galleryImages/22-5921_Penn_Ave_S-22.jpg',
+                            'assets/PennBasement/galleryImages/23-5921_Penn_Ave_S-23.jpg'
+                            ])">
+                    View Project Details
+                    </button>
+                </div>
+              
+            </div>
+            <div class="project-column">
+            <img src="assets/PennBasement/PennBaseAfter.jpg"
+                alt="After exterior"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>After</h4>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Penn Ave Living Room -->
+    <div class="project-wrapper">
+    <h3 class="project-title w3-border-bottom w3-border-light-grey w3-padding-16">
+      1964 BUNGALOW LIVINGROOM
+    </h3>
+        <div class="project">
+            <div class="project-column">
+            <img src="assets/PennAveImages/pennliving_old.JPG"
+                alt="Before"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>Before</h4>
+                <p>Residential | Concept, Rendering, Execution | Completed JUNE 2024</p>
+            </div>
+                <div class="project-button">
+                    <button class="w3-button w3-black"
+                            onclick="openGallery([
+                            'assets/PennAveImages/galleryImages/07-5921_Penn_Ave_S-7.jpg',
+                            'assets/PennAveImages/galleryImages/08-5921_Penn_Ave_S-8.jpg',
+                            'assets/PennAveImages/galleryImages/09-5921_Penn_Ave_S-9.jpg',
+                            'assets/PennAveImages/galleryImages/10-5921_Penn_Ave_S-10.jpg',
+                            'assets/PennAveImages/galleryImages/11-5921_Penn_Ave_S-11.jpg',
+                            'assets/PennAveImages/galleryImages/12-5921_Penn_Ave_S-12.jpg',
+                            'assets/PennAveImages/galleryImages/13-5921_Penn_Ave_S-13.jpg',
+                            'assets/PennAveImages/galleryImages/pennliving_old.JPG'
+                            ])">
+                    View Project Details
+                    </button>
+                </div>
+            </div>
+        
+            <div class="project-column">
+            <img src="assets/PennAveImages/08-5921_Penn_Ave_S-8.jpg"
+                alt="After exterior"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>After</h4>
+            </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Penn Ave Upstairs -->
+    
+    <div class="project-wrapper">
+    <h3 class="project-title w3-border-bottom w3-border-light-grey w3-padding-16">
+      1964 BUNGALOW BEDROOM
+    </h3>
+        <div class="project">
+            <div class="project-column">
+            <img src="assets/PennAveImages/upstairs_old.JPG"
+                alt="Before"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>Before</h4>
+                <p>Residential | Concept, Rendering, Execution | Completed JUNE 2024</p>
+            </div>
+            <div class="project-button">
+                <button class="w3-button w3-black"
+                        onclick="openGallery([
+                          'assets/PennAveImages/upstairsGallery/upstairs_old.JPG',
+                          'assets/PennAveImages/upstairsGallery/14-5921_Penn_Ave_S-14.jpg',
+                          'assets/PennAveImages/upstairsGallery/15-5921_Penn_Ave_S-15.jpg',
+                          'assets/PennAveImages/upstairsGallery/16-5921_Penn_Ave_S-16.jpg',
+                          'assets/PennAveImages/upstairsGallery/17-5921_Penn_Ave_S-17.jpg',
+                          'assets/PennAveImages/upstairsGallery/18-5921_Penn_Ave_S-18.jpg'
+                        ])">
+                  View Project Details
+                </button>
+            </div>
+              
+        </div>
+    
+
+        <div class="project-column">
+            <img src="assets/PennAveImages/16-5921_Penn_Ave_S-16.jpg"
+                alt="After exterior"
+                onclick="openModal(this.src)">
+            <div class="project-description">
+                <h4>After</h4>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ===== IMAGE MODAL ===== -->
+<div class="image-modal" id="imageModal" onclick="closeModal(event)">
+    <span class="modal-arrow left" onclick="prevImage(event)">&#10094;</span>
+    <img id="modalImage">
+    <span class="modal-arrow right" onclick="nextImage(event)">&#10095;</span>
+  
+  </div>
+  
+
+<!-- ===== MODAL SCRIPT ===== -->
+<script>
+    let galleryImages = [];
+    let currentIndex = 0;
+  
+    function openModal(src) {
+      galleryImages = [src];
+      currentIndex = 0;
+      showImage();
+      showModal();
+    }
+  
+    function openGallery(images) {
+      galleryImages = images;
+      currentIndex = 0;
+      showImage();
+      showModal();
+    }
+  
+    function showImage() {
+      const modalImg = document.getElementById("modalImage");
+      modalImg.src = galleryImages[currentIndex];
+    }
+  
+    function showModal() {
+      document.getElementById("imageModal").style.display = "flex";
+    }
+  
+    function closeModal(e) {
+      if (e.target.id === "imageModal") {
+        document.getElementById("imageModal").style.display = "none";
+      }
+    }
+  
+    function nextImage(e) {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      showImage();
+    }
+  
+    function prevImage(e) {
+      e.stopPropagation();
+      currentIndex =
+        (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      showImage();
+    }
+  
+    // Keyboard support
+    document.addEventListener("keydown", function (e) {
+      const modal = document.getElementById("imageModal");
+      if (modal.style.display !== "flex") return;
+  
+      if (e.key === "ArrowRight") nextImage(e);
+      if (e.key === "ArrowLeft") prevImage(e);
+      if (e.key === "Escape") modal.style.display = "none";
+    });
+  </script>
+  
+
+<!-- ===================== -->
+<!-- ===== FOOTER ======== -->
+<!-- ===================== -->
+
+<div class="w3-container w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+  <p>Lets get in touch and talk about your next project.</p>
+
+  <form id="contact-form">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required>
+    <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required>
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required>
+
+    <button class="w3-button w3-black w3-section" type="submit">
+      SEND MESSAGE
+    </button>
+  </form>
+</div>
+
+</body>
+</html>
+
+<script>
+    let slideIndex = 1;
+    let slideTimer;
+  
+    showSlides(slideIndex);
+    autoSlides();
+  
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+  
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+  
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+  
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].classList.add("active");
+    }
+  
+    function currentSlide(n) {
+      clearTimeout(slideTimer);
+      slideIndex = n;
+      showSlides(slideIndex);
+      autoSlides();
+    }
+  
+    function autoSlides() {
+      slideTimer = setTimeout(() => {
+        slideIndex++;
+        showSlides(slideIndex);
+        autoSlides();
+      }, 8000); // 5 seconds per slide
+    }
+  </script>
+  
