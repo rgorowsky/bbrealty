@@ -11,18 +11,31 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <!-- Logo -->
     <a href="/" class="w3-bar-item w3-button">
-        <img src="assets/logo-large.png" alt="BB Realty Logo" class="nav-logo">
-        <b>BB Realty</b>
-        </a>
-    <!-- Float links to the right. Hide them on small screens -->
-
+      <img src="assets/logo-large.png" alt="BB Realty Logo" class="nav-logo">
+      <b>BB Realty</b>
+    </a>
+    <!-- Hamburger icon (mobile only) -->
+    <a href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+       onclick="toggleMobileMenu()">
+      &#9776;
+    </a>
+    <!-- Desktop Menu -->
     <div class="w3-right w3-hide-small">
       <a href="/remodeling" class="w3-bar-item w3-button">Remodeling</a>
       <a href="/coming_soon" class="w3-bar-item w3-button">Lending</a>
       <a href="/testimonials" class="w3-bar-item w3-button">Testimonials</a>
       <a href="/about" class="w3-bar-item w3-button">About Me</a>
     </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/remodeling" class="w3-bar-item w3-button">Remodeling</a>
+    <a href="/coming_soon" class="w3-bar-item w3-button">Lending</a>
+    <a href="/testimonials" class="w3-bar-item w3-button">Testimonials</a>
+    <a href="/about" class="w3-bar-item w3-button">About Me</a>
   </div>
 </div>
 
@@ -73,18 +86,21 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form id="contact-form">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-    <script src="contact-form.js"></script>
+    <div class="contact-inner">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+  
+      <p>Let's get in touch and talk about your next project.</p>
+  
+      <form id="contact-form">
+        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
   </div>
 
 <!-- End page content -->

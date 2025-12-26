@@ -990,6 +990,18 @@ a {
 	}
 }
 
+.contact-inner {
+	max-width: 430px;
+	margin-left: 0;       /* align left */
+	margin-right: auto;
+  }
+  
+
+#mobileMenu a {
+	padding: 16px;
+	font-size: 18px;
+  }  
+
 @media (max-width:768px) {
 	.w3-modal-content {
 		width: 500px
