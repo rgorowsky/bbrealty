@@ -2148,52 +2148,34 @@ a {
   
   /* ---------- SECTION 2 ---------- */
   
-  .feature-bottom {
+/* Base layout */
+.feature-bottom {
 	display: flex;
 	gap: 32px;
-	align-items: stretch;
+	align-items: flex-start;
   }
-
   
-  /* Left image */
+  /* LEFT column — largest */
   .bottom-col.left {
-	flex: 1;
+	flex: 0 0 45%;
   }
   
-  .bottom-col.left img {
-	width: 100%;
-	display: block;
-  }
-  
-  /* Middle color palette */
+  /* MIDDLE (color swatches) */
   .bottom-col.palette {
-	width: 70px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex: 0 0 15%;
   }
   
-  .color-swatch {
-	height: 18%;
-	border-radius: 4px;
-  }
-  
-  /* Right content */
+  /* RIGHT column — intentionally smaller */
   .bottom-col.right {
-	flex: 1.2;
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
+	flex: 0 0 25%;
   }
   
-  .bottom-col.right img {
-	max-height: 260px;
+  /* Safety: images never force column growth */
+  .bottom-col img {
+	width: 100%;
+	height: auto;
+	display: block;
 	object-fit: cover;
-  }
-  
-  .bottom-col.right .caption {
-	font-weight: bold;
-	margin-top: 6px;
   }
   
   /* ===== RESPONSIVE ===== */
