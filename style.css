@@ -2154,6 +2154,35 @@ a {
 	align-items: stretch;
   }
   
+  /* LEFT COLUMN */
+  .bottom-col.left {
+	flex: 0 0 40%;
+  }
+  
+  /* COLOR STRIP */
+  .bottom-col.palette {
+	flex: 0 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  /* RIGHT COLUMN — intentionally smaller */
+  .bottom-col.right {
+	flex: 0 0 35%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+  }
+  
+  /* Prevent images from stretching layout */
+  .bottom-col img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+  }  
+  
   /* Left image */
   .bottom-col.left {
 	flex: 1;
