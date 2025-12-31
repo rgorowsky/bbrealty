@@ -2154,23 +2154,43 @@ a {
 	gap: 32px;
 	align-items: flex-start;
   }
+
   
-  /* LEFT column — largest */
+  /* Left image */
   .bottom-col.left {
 	flex: 0 0 45%;
   }
   
-  /* MIDDLE (color swatches) */
+  .bottom-col.left img {
+	width: 100%;
+	display: block;
+  }
+  
+  /* Middle color palette */
   .bottom-col.palette {
 	flex: 0 0 15%;
   }
   
-  /* RIGHT column — intentionally smaller */
+  .color-swatch {
+	height: 18%;
+	border-radius: 4px;
+  }
+  
+  /* Right content */
   .bottom-col.right {
 	flex: 0 0 25%;
   }
   
-  /* Safety: images never force column growth */
+  .bottom-col.right img {
+	max-height: 260px;
+	object-fit: cover;
+  }
+  
+  .bottom-col.right .caption {
+	font-weight: bold;
+	margin-top: 6px;
+  }
+
   .bottom-col img {
 	width: 100%;
 	height: auto;
