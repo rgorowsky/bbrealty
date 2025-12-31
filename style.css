@@ -2148,6 +2148,12 @@ a {
   
   /* ---------- SECTION 2 ---------- */
   
+  .feature-bottom {
+	display: flex;
+	gap: 32px;
+	align-items: stretch;
+  }
+
   .bottom-col.right img {
 	max-height: 260px;
 	object-fit: cover;
