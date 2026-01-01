@@ -2157,7 +2157,7 @@ a {
   
   /* Left image */
   .bottom-col.left {
-	flex: 0 0 65%;
+	flex: 0 0 55%;
   }
   
   .bottom-col.left img {
