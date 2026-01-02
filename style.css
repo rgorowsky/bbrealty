@@ -2154,6 +2154,7 @@ a {
 	gap: 32px;
 	align-items: stretch;
 	justify-content: center;
+	padding: 0 2vw;
   }
   
   /* Left image */
