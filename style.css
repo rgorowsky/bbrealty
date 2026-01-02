@@ -2184,7 +2184,7 @@ a {
   
   /* Right content */
   .bottom-col.right {
-	flex: 0 0 20%;
+	flex: 0 0 15%;
   }
   
   .bottom-col.right img {
