@@ -2102,6 +2102,10 @@ a {
   }
   
   /* ---------- SECTION 1 ---------- */
+
+  .feature-inner {
+	max-width: 90%;
+  }  
   
   .feature-top {
 	display: flex;
@@ -2116,6 +2120,14 @@ a {
   .feature-right {
 	flex: 1;
   }
+
+  .feature-left .feature-inner {
+	margin-left: auto;
+  }
+  
+  .feature-right .feature-inner {
+	margin-right: auto;
+  }  
   
   .feature-title {
 	font-size: 2.8rem;
