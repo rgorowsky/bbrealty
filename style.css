@@ -2108,6 +2108,7 @@ a {
   }  
   
   .feature-top {
+	justify-content: center;
 	display: flex;
 	gap: 48px;
 	margin-bottom: 80px;
