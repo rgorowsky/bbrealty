@@ -2112,7 +2112,10 @@ a {
 	max-height: 70vh;
   }
   
-  .feature-left,
+  .feature-left {
+	padding-left: 2vw;
+  }  
+
   .feature-right {
 	flex: 1;
   }
