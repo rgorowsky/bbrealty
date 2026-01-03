@@ -2229,6 +2229,26 @@ a {
 	display: block;
 	object-fit: cover;
   }
+
+  /* ---------- SECTION 3 ---------- */
+
+.feature-more {
+	text-align: center;
+	padding: 48px 0 24px;
+  }
+  
+  .feature-more-link {
+	font-weight: bold;
+	font-size: 1rem; /* matches your .caption size */
+	text-decoration: none;
+	color: inherit;
+	letter-spacing: 0.5px;
+  }
+  
+  .feature-more-link:hover {
+	text-decoration: underline;
+  }
+  
   
   /* ===== RESPONSIVE ===== */
   @media (max-width: 900px) {
