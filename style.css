@@ -2161,6 +2161,8 @@ a {
   /* Left image */
   .bottom-col.left {
 	flex: 0 0 55%;
+	max-height: 100%;
+	object-fit: cover;
   }
   
   .bottom-col.left img {
