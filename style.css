@@ -2175,6 +2175,7 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 15px;
+	max-height: 100%;
   }  
   
   .color-swatch {
@@ -2185,6 +2186,9 @@ a {
   /* Right content */
   .bottom-col.right {
 	flex: 0 0 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   }
   
   .bottom-col.right img {
@@ -2195,6 +2199,7 @@ a {
   .bottom-col.right .caption {
 	font-weight: bold;
 	margin-top: 6px;
+	margin-bottom: 4px;
   }
 
   .bottom-col img {
