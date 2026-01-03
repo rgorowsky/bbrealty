@@ -2107,7 +2107,7 @@ a {
 	display: flex;
 	gap: 48px;
 	margin-bottom: 80px;
-	align-items: stretch;
+	align-items: flex-start;
 	padding: 0 2vw;
 	max-height: 70vh;
   }
