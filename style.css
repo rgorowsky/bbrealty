@@ -2132,6 +2132,8 @@ a {
   .feature-image {
 	width: 85%;
 	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
   }
   
   .feature-description {
